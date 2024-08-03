@@ -1,12 +1,12 @@
 # API e-commerce
 <details>
-<summary><h2>Rotas da API</summary>
+<summary>Rotas da API</summary>
 <hr>
 
 > **ATENÇÃO! Os endpoints deverão seguir a estrutura descrita logo abaixo.**
 <br>
 <details>
-<summary><h3>Rotas de Fornecedores</summary>
+<summary>Rotas de Fornecedores</summary>
 
 **Rota Voltada para os fornecedores/lojas que participaram do site**
 <br>
@@ -21,7 +21,7 @@ rotas | nome | descrição
 
 <!-- item -->
 <details>
-<summary><h3>Rota login</h3></summary>
+<summary>Rota login</summary>
 
 **Retorna um objeto com as informações do fornecedor se corretas as informações**
 
@@ -63,7 +63,7 @@ GET
 </details>
 <!-- item -->
 <details>
-<summary><h3>Rota fornecedores (adm)</summary>
+<summary>Rota fornecedores (adm)</summary>
 
 **Retorna uma lista de fornecedores**
 
@@ -109,7 +109,7 @@ GET
 
 <!-- item -->
 <details>
-<summary><h3>Rota criar fornecedor</summary>
+<summary>Rota criar fornecedor</summary>
 
 **Cria um fornecedor com as informações enviadas**
 
@@ -145,7 +145,7 @@ POST
 </details>
 <!-- item -->
 <details>
-<summary><h3>Rota modificar fornecedor</summary>
+<summary>Rota modificar fornecedor</summary>
 
 **Modifica um fornecedor**
 
@@ -188,7 +188,7 @@ PATCH
 
 <!-- item -->
 <details>
-<summary><h3>Rota deletar fornecedor</summary>
+<summary>Rota deletar fornecedor</summary>
 
 **Deleta um fornecedor**
 
