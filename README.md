@@ -3,12 +3,12 @@
 <summary>Rotas da API</summary>
 <hr>
 
-> **ATENÇÃO! Os endpoints deverão seguir a estrutura descrita logo abaixo.**
+> ATENÇÃO! Os endpoints deverão seguir a estrutura descrita logo abaixo.
 <br>
 <details>
 <summary>Rotas de Fornecedores</summary>
 
-**Rota Voltada para os fornecedores/lojas que participaram do site**
+Rota Voltada para os fornecedores/lojas que participaram do site
 <br>
 
 rotas | nome | descrição
@@ -23,24 +23,24 @@ rotas | nome | descrição
 <details>
 <summary>Rota login</summary>
 
-**Retorna um objeto com as informações do fornecedor se corretas as informações**
+Retorna um objeto com as informações do fornecedor se corretas as informações
 
-**Método**
+Método
 ```
 GET
 ```
-**Rota**
+Rota
 ```
 /fornecedor/login
 ```
-**Parametros**
+Parametros
 ```json
 {
     email: string(email do usuario),
     senha: string(senha do usuario)
 }
 ```
-**Resposta/Response (padrão)**
+Resposta/Response (padrão)
 ```json
 [
     {
@@ -65,17 +65,17 @@ GET
 <details>
 <summary>Rota fornecedores (adm)</summary>
 
-**Retorna uma lista de fornecedores**
+Retorna uma lista de fornecedores
 
-**Método**
+Método
 ```
 GET
 ```
-**Rota**
+Rota
 ```
 /fornecedores/
 ```
-**Resposta/Response (exemplo)**
+Resposta/Response (exemplo)
 ```json
 [
    {
@@ -111,17 +111,17 @@ GET
 <details>
 <summary>Rota criar fornecedor</summary>
 
-**Cria um fornecedor com as informações enviadas**
+Cria um fornecedor com as informações enviadas
 
-**Método**
+Método
 ```
 POST
 ```
-**Rota**
+Rota
 ```json
 /fornecedores/
 ```
-**Corpo/Body**
+Corpo/Body
 ```json
 {
     "nome": string(tamanho min: 3),
@@ -134,7 +134,7 @@ POST
     "senha": string(tamanho min: 8, tamanho max: 12)
 }
 ```
-**Resposta/Response (exemplo)**
+Resposta/Response (exemplo)
 ```json
 {
     "sucesso": true,
@@ -147,23 +147,23 @@ POST
 <details>
 <summary>Rota modificar fornecedor</summary>
 
-**Modifica um fornecedor**
+Modifica um fornecedor
 
-**Método**
+Método
 ```
 PATCH
 ```
-**Rota**
+Rota
 ```
 /fornecedores/
 ```
-**Parametros**
+Parametros
 ```json
 {
     Id: string(id do fornecedor)
 }
 ```
-**Corpo/Body**
+Corpo/Body
 ```json
 {
     "nome": string(tamanho min: 3),
@@ -176,7 +176,7 @@ PATCH
     "senha": string(tamanho min: 8, tamanho max: 12)
 }
 ```
-**Resposta/Response (exemplo)**
+Resposta/Response (exemplo)
 ```json
 {
     "sucesso": true
@@ -190,24 +190,24 @@ PATCH
 <details>
 <summary>Rota deletar fornecedor</summary>
 
-**Deleta um fornecedor**
+Deleta um fornecedor
 
-**Método**
+Método
 ```
 DELETE
 ```
-**Rota**
+Rota
 ```
 /fornecedores/
 ```
-**Parametros**
+Parametros
 ```json
 {
     id: string(id do fornecedor),
     senha: string(senha do fornecedor)
 }
 ```
-**Resposta/Response (exemplo)**
+Resposta/Response (exemplo)
 ```json
 {
     "sucesso": true
