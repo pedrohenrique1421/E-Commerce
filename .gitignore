@@ -1,1 +1,4 @@
 node_modules/
+
+# A chave da API
+src/config/firebase_config.js
