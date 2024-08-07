@@ -53,7 +53,7 @@ const SingUpFornecedoresManager = async (req, res) => {
         const data = req.body;
         delete data.email;
         delete data.senha;
-        CreateDocWithId(user.uid, data);
+        await CreateDocWithId(user.uid, data);
         res.status(201);
         res.send({
             id: user.uid,
